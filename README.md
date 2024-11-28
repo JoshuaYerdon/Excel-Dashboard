@@ -4,7 +4,7 @@
  <BR>
 **_The following dashboard can be accessed [HERE](https://1drv.ms/x/s!AuV0f7giR2NGhC6TURBWo16u7rl8?e=SQLigE) and in this repository._**
 
-## Dashboard Decription
+## Dashboard Description
 I found a simple dataset about ranking ramen types on Kaggle. It included things like the rating, type of ramen, brand, country, and the form or packaging of the ramen. 
 Here's a quick 60-second summary:
 
@@ -48,5 +48,6 @@ I used **XLOOKUP** to find the rating for that choice and display it on the grap
 Lastly, I repeated this process two more times for the remaining graphs.
 <br>
 ![Ramen Ratings Video](https://github.com/user-attachments/assets/5586ac24-790e-4567-9eb3-aae6bde09b27)
-
+![image](https://github.com/user-attachments/assets/2885d27a-e4ad-49c2-837b-6ffdc61b9ac9)
+**_A larger look at the Coding_**
 
