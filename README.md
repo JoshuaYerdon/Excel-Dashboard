@@ -79,7 +79,8 @@ Lastly, I repeated this process two more times for the remaining graphs.
 converted into a PivotChart this time.
 
 ## Quick Rundown
-1: I started by going to the **Data** worksheet, and selecting **Insert PivotTable**, the following fields were used:
+1: I started by going to the **Data** worksheet, and selecting **Insert PivotTable**. Since I was trying to replicate the Dashboard above, I selected fields accordingly, 
+the following fields were used:
 <br>
 ![image](https://github.com/user-attachments/assets/f40b810c-0eda-4b09-8d61-8a0907617040)
 ![image](https://github.com/user-attachments/assets/5370414d-9fab-476a-a342-4ec33dfafff8)
@@ -89,15 +90,25 @@ converted into a PivotChart this time.
 - Inside of the **Columns** field values were inserted.
 <br>
 
-2: Next, I selected the table and inserted a slicer.
+2: Next, I selected the table and inserted a slicer. Slicers are used to filter data interactively. Again, since the goal is to create a PivotChart similar to the Dashboard, I added a slicer to filter by country.
 ![2](https://github.com/user-attachments/assets/fcb3199d-c5ef-4559-966c-000d589d5a65)
-<br>
-Slicers are used to filter data interactively. Since the goal is to create a PivotChart similar to the Dashboard, I added a slicer to filter by country.
+
 
 3: Now that we have a slicer, we can manipuilate the data by filtering for whatever country or countries we want to.
 
+![GIF2](https://github.com/user-attachments/assets/bcaaf04c-136c-42f0-addb-c05d646bbac9)
 
+## Conclusion
+From these two examples of data visualizations, businesses, countries, or other stakeholders can draw several insights:
+- Types of ramen to produce
+- Countries to focus production efforts in
+- Preferred styles of ramen.
 
+I intentionally omitted certain data, like Top 10 and Variety because:
+- I prioritized other fields which I considered more significant factors.
+- Including too many data variants would make this presentation overly complex.
+
+Thank you for taking the time to review this demonstration of my foundational Excel skills!
 
 
 
