@@ -1,10 +1,10 @@
-# Excel Dashboard + Pivot Table Demonstration
+# Excel Dashboard + PivotTable Demonstration
 
 ![image](https://github.com/user-attachments/assets/6f2861c7-20eb-4ec5-8335-8aadedd07582)
  <BR>
 **_The following dashboard can be accessed [HERE](https://1drv.ms/x/s!AuV0f7giR2NGhC6TURBWo16u7rl8?e=SQLigE) and in this repository._**
 
-## Project Description
+## Dashboard Description
 I found a simple dataset about ranking ramen types on Kaggle. It included things like the rating, type of ramen, brand, country, and the form or packaging of the ramen. This project will
 showcase my ability to use foundational Excel functions, and make charts/pivot charts for data visualization.
 
@@ -44,40 +44,62 @@ showcase my ability to use foundational Excel functions, and make charts/pivot c
 ```
 ![image](https://github.com/user-attachments/assets/2dd750e5-291f-41f5-98d5-3b0cf0552104)
 
-## Making the Charts
+## Making the Graphs
 
-1 & 2: The first and 3rd columns here are used as the data for the chart. *(Column 2 is essentially useless here, I just like to organize the data like this)*. In order to choose what company we want to see the average review of, I created a button for the graph using **Data Validation** to select the array of data, that being the **Company Sorted** Column. 
+1 & 2: The first and 3rd columns here are used as the data for the chart. *(We will talk about column 2 soon)*. In order to choose what company we want to see the average review of, I created a button for the graph using **Data Validation** to select the array of data, that being the **Company Sorted** Column. 
 ```
 ='Company + Country + Style'!$I$2:$I$16
 ```
 
-![Image](https://i.imgur.com/EJvNyvA.png)
+![image](https://github.com/user-attachments/assets/201fef78-ebbd-4cd1-bb0b-b5d9545a702f)
 
-3: The last column has the **XLOOKUP** function, this will return a value from the range when selected in the graph. In the case of the GIF below, the company **MAMA** when selected updates to an average review of 3.7.
+3: The last column has the **XLOOKUP** function, this will return a value from the range when selected in the graph. In the case of the GIF below, the company **MAMA** updates to an average review of 3.7 when selected .
 ```
 =XLOOKUP(company,I2:I16,K2:K16)
 ```
 
 ![Xlookup gif](https://github.com/user-attachments/assets/18ac1325-0759-486b-b38f-ed8a6c7b896c) <br>
+**Extra:** I found a way to make the graph's bars change, contrasting the focused data point. In the case of this video, the focused bar will become dark blue, while the other companies bars remain light blue.
+- The top **IF** function looks for the value of the **I** column, if it doesn't equal **Company** *(The button name for the chart)*, return the value of the **J** column.
+- The bottom **IF** function does the opposite, 
+these two IFS create the contrasting bars.
+
+```
+=IF($I2<>company,$J2,N/A())
+=IF($I2=company,$J2,N/A())
+```
+
 Lastly, I repeated this process two more times for the remaining graphs.
-
-The chart itself is composed of the 
-![image](https://github.com/user-attachments/assets/ae8988f9-d888-4229-ad07-bd4fe095acd2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
 ![Ramen Ratings Video](https://github.com/user-attachments/assets/5586ac24-790e-4567-9eb3-aae6bde09b27)
+
+# PivotTable & PivotChart Section
+![image](https://github.com/user-attachments/assets/d27b35a7-f64d-4010-87da-f11ef6c2c0c1)
+<br>
+**PivotTables** are ubiquitous when it comes to Excel and visualizing data. Below is a quick demonstration of the above data, <br>
+converted into a PivotChart this time.
+
+## Quick Rundown
+1: I started by going to the **Data** worksheet, and selecting **Insert PivotTable**, the following fields were used:
+<br>
+![image](https://github.com/user-attachments/assets/f40b810c-0eda-4b09-8d61-8a0907617040)
+![image](https://github.com/user-attachments/assets/5370414d-9fab-476a-a342-4ec33dfafff8)
+![image](https://github.com/user-attachments/assets/83fee973-3ce7-4bc1-a13e-762ee1a95677)
+- Inside of the **Values** field **Average Rating**, **Total Ratings** and **Style Total** were inserted.
+- Inside of the **Rows** field I used **Style** and **Brand**. 
+- Inside of the **Columns** field values were inserted.
+<br>
+
+2: Next, I selected the table and inserted a slicer.
+![2](https://github.com/user-attachments/assets/fcb3199d-c5ef-4559-966c-000d589d5a65)
+<br>
+Slicers are used to filter data interactively. Since the goal is to create a PivotChart similar to the Dashboard, I added a slicer to filter by country.
+
+3: Now that we have a slicer, we can manipuilate the data by filtering for whatever country or countries we want to.
+
+
+
+
+
+
+
+
