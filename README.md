@@ -99,12 +99,12 @@ the following fields were used:
 ![GIF2](https://github.com/user-attachments/assets/bcaaf04c-136c-42f0-addb-c05d646bbac9)
 
 ## Conclusion
-From these two examples of data visualizations, businesses, countries, or other stakeholders can draw several insights:
+From these two examples of data visualizations, businesses, countries, or other stakeholders can draw **several insights:**
 - Types of ramen to produce
 - Countries to focus production efforts in
 - Preferred styles of ramen.
 
-I intentionally omitted certain data, like Top 10 and Variety because:
+I **intentionally omitted** certain data, like Top 10 and Variety because:
 - I prioritized other fields which I considered more significant factors.
 - Including too many data variants would make this presentation overly complex.
 
