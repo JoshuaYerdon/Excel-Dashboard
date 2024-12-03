@@ -1,23 +1,30 @@
-## Excel Dashboard Demonstration 
+# Excel Dashboard + Pivot Table Demonstration
 
 ![image](https://github.com/user-attachments/assets/6f2861c7-20eb-4ec5-8335-8aadedd07582)
  <BR>
 **_The following dashboard can be accessed [HERE](https://1drv.ms/x/s!AuV0f7giR2NGhC6TURBWo16u7rl8?e=SQLigE) and in this repository._**
 
-## Dashboard Description
-I found a simple dataset about ranking ramen types on Kaggle. It included things like the rating, type of ramen, brand, country, and the form or packaging of the ramen. 
-Here's a quick 60-second summary:
+## Project Description
+I found a simple dataset about ranking ramen types on Kaggle. It included things like the rating, type of ramen, brand, country, and the form or packaging of the ramen. This project will
+showcase my ability to use foundational Excel functions, and make charts/pivot charts for data visualization.
 
-## Quick Rundown
 
-I started by using functions like **UNIQUE** and **SORT** to organize the data into groups. 
+## Starting Things Off
+1: I started by using the **UNIQUE** function to reference the **Data** worksheet, removing any redundant fields from the **Company** column so that company names will only show once. 
+```
+=UNIQUE(Data!B2:B2581)
+```
 <br>
-![image](https://github.com/user-attachments/assets/14753c0f-cc5c-49a2-9521-3d51c2714d02)
+2: Next I used the **COUNTIF** function to count how many reviews there were **PER** company.
 
 ```
-=ROUND(AVERAGEIF(Data!B3:B2582,$A3,Data!F3:F2582), 2)
-=SORT(A2:C354,2,-1)
+=COUNTIF(Data!B2:B2581,$A2)
 ```
+
+![image](https://i.imgur.com/ak4Bw85.png)
+
+
+
 
 Then, I used **COUNTIF** to count key numbers or items that helped give insights.
 ![image](https://github.com/user-attachments/assets/4ed890f1-4f2d-405d-923b-e18aa7dda205)
